@@ -1,0 +1,127 @@
+.projects_container_section {
+    margin: 40px 0px;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.Project_content {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.project_img_container {
+    position: relative;
+    width: 400px;
+    
+    margin-right: 20px;
+}
+
+.project_img_container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project_information {
+    flex: 1;
+}
+
+.project_information h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project_btn {
+    display: flex;
+}
+
+.project_btn button p {
+    text-decoration: none;
+    outline: none;
+}
+
+/* .Project_btn Link{
+    
+} */
+.project_btn button {
+    display: flex;
+    align-items: center;
+
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #F2BF26;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.project_btn button:hover {
+    background-color: #a8851a;
+}
+
+.project_btn button:focus {
+    outline: none;
+}
+
+.project_btn button svg {
+    margin-left: 5px;
+}
+
+
+
+.slider_container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    width: 80%;
+    height: 80%;
+}
+
+.close {
+    align-self: flex-end;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.close-icon {
+    color: white;
+    transform: scale(1.2);
+}
+
+.view-more-btn {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    transition: 0.5s;
+}
+
+.project_img_container:hover .view-more-btn {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+}
