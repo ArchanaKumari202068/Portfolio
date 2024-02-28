@@ -23,7 +23,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="Contact_conatiner">
+      <div className="conatiner" id="Contact_conatiner">
         <div className="contact_details">
           <div className="contact_infor">
             <LocalPhoneOutlinedIcon className="Contact_icons"/>

@@ -9,7 +9,7 @@ import Slider from '../Slider/Slider';
 const ProjectCards = (props) => {
   const [showSlider,setShowSlider] = useState(false);
   return (
-      <div className="Project_content">
+      <div  className="container" id='Project_content'>
         <div className="project_img_container" >
           <div className='view-more-btn'>
             <button onClick={()=>setShowSlider(true)}>View More</button>
@@ -23,7 +23,7 @@ const ProjectCards = (props) => {
           ))}</p>
           <p><strong>Technologies Used:</strong> {props.technologiesUsed}</p>
           <div className="project_btn">
-              <Link to={props.SourceCode}><button> <p>Source Code</p> <p><GitHubIcon/></p>   </button></Link>
+              <Link to={props.SourceCode}><button> <p>Source Code</p> <p><GitHubIcon/></p></button></Link>
               <Link to={props.projectLink}><button> <p>View Demo</p> <p><SendOutlinedIcon/> </p>  </button></Link>
           </div>
         </div>

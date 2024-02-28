@@ -1,0 +1,74 @@
+.skils_icons {
+    transform: scale(1.4);
+    color: #F2BF26;
+    position: relative;
+    top: 4px;
+}
+
+.skills_title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    /* border: 1px solid black; */
+}
+
+.skills-icons_after {
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left: auto;
+}
+
+.skills_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 100px;
+    width: 90%;
+}
+
+/* .skills_content {
+    border: 1px solid black;
+} */
+
+.skill_list {
+    width: 93%;
+    margin-left: auto;
+}
+
+/* Define the styles for the progress bar */
+.progress {
+    width: 100%;
+    background-color: #f3e8d1;
+    border-radius: 50px;
+}
+
+.progress-fill {
+    border-radius: 50px;
+    height: 8px;
+    background-color: #e5b219;
+}
+
+.skills_level {
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.skill_details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.key-up.active{
+    transform: rotate(180deg);
+    transition: 0.7s;
+}

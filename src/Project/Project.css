@@ -7,8 +7,8 @@
     gap: 25px;
 }
 
-.Project_content {
-    width: 100%;
+#Project_content {
+    width: 70%;
     padding: 15px;
     display: flex;
     align-items: center;
@@ -31,19 +31,27 @@
 }
 
 .project_information {
-    flex: 1;
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    
 }
 
 .project_information h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
+.project_information {
+    text-align: justify;
+    
 
+}
 .project_btn {
     display: flex;
 }
 
-.project_btn button p {
+.project_btn a{
     text-decoration: none;
     outline: none;
 }
@@ -78,7 +86,6 @@ button {
 .project_btn button svg {
     margin-left: 5px;
 }
-
 
 
 .slider_container {

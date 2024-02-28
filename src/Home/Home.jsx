@@ -5,10 +5,10 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Home_img from "../Assets/profile_pic.jpg";
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
-const Home = ({theme, setTheme }) => {
-  
+const Home = ( ) => {
+
   return (
-    <div className= {`Home ${theme === 'dark' ? 'dark-mode' : 'light-mode'}`}>
+    <div className= {"container"} id="Home">
       
       <div className="Social_icons_home">
         <FontAwesomeIcon icon={faLinkedin} />
@@ -29,7 +29,14 @@ const Home = ({theme, setTheme }) => {
             development,full-stack development. With a hands-on approach, I
             strive to create impactful solutions and bring innovation to the
             digital realm.
+
+
+            
+
+
           </p>
+
+
         </div>
         <div className="home_button">
           <button > Contact Me <SendOutlinedIcon/></button>

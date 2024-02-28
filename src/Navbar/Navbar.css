@@ -1,46 +1,57 @@
-.Navbar{
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background: #fff;
-    padding:2% 5%;
-    margin: 0;
-    /* border: 2px solid red; */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+.Navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
 
-}
-ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    gap: 2em;
-}
-ul li{
-    font-size: 1.5rem;
-    cursor: pointer;
+  padding: 2% 5%;
+  margin-top: 0;
+  /* border: 2px solid red; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 100;
 }
 
-.day-night_toggel{
-   width: auto;
-   height: auto;
-   position: relative;
-   transition: background-color 0.3s ease, color 0.3s ease; 
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 2em;
+}
+
+ul li {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+ul a {
+  text-decoration: none;
 
 }
+
+.day-night_toggel {
+  width: auto;
+  height: auto;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
 .ToggleOnIcon,
 .ToggleOffIcon {
   font-size: 140px;
   width: 200px;
-  height: 8rem; 
+  height: 8rem;
   position: absolute;
   top: 0%;
   /* border: 2px solid rgb(255, 0, 0); */
-  transform:scale(3)
-  
-}  
+  transform: scale(3)
+}
+
 .ToggleOffIcon,
 .ToggleOnIcon,
 .day_icons,
@@ -48,16 +59,20 @@ ul li{
   transition: all 0.5s ease;
 }
 
-.day_icons{
-    right: 30px;
-    color: #F2BF26;
+.day_icons {
+
+  right: 30px;
+  color: #F2BF26;
+
 }
-.night_icons{
-    left: 50px;
+
+.night_icons {
+  left: 50px;
 }
+
 .day_icons,
 .night_icons {
-  font-size:200px; 
+  font-size: 200px;
   width: 10px;
   position: absolute;
   top: 0%;
@@ -65,10 +80,18 @@ ul li{
   transform: scale(1);
 }
 
-.Navbar.dark-mode{
-    background-color: #333;
-    color: #fff;
+.Navbar.dark-mode {
+  background-color: #333;
+
 }
-li:hover{
+
+.dark-mode li,
+.dark-mode .ToggleOffIcon,
+.ToggleOnIcon,
+.dark-mode .night_icons {
+  color: #fff;
+}
+
+li:hover {
   color: #F2BF26;
 }
